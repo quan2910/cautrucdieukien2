@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Nhap so tien vay')
+    let b = +prompt('Nhap so thang vay')
+  if (a > 0 && b > 0 && b >=1 && b <=12 ){
+    let tienlai = (a * 2 / 100)
+    let tpt = (a + tienlai)
+    alert('So tien pha tra la' + tpt + ' VND')
+  }
+  if ( a > 0 && b > 0 && b >=13 && b <=24 ){
+    let tienlai = (a * 6 / 100)
+    let tpt = (a + tienlai )+ tienlai
+    alert('So tien pha tra la' + tpt + ' VND')
+  }
+  if ( a > 0 && b > 0 && b >=25 && b <=36 ){
+    let tienlai = (a * 8 / 100)
+      let tpt = (a + tienlai4 ) + (tienlai * 2)
+    alert('So tien pha tra la' + tpt + ' VND')
+  }
+  if ( a > 0 && b > 0 && b >= 37 && b <= 48 ){
+    let tienlai = (a * 9 / 100)
+    let tpt = (a + tienlai  ) + (tienlai * 3)
+    alert('So tien pha tra la' + tpt + ' VND')
+  }
+</script>
+</body>
+</html>

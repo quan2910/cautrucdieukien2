@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> chuyen tu m sang ft</h1>
+<label for="a"> Nhap do dai (m):  </label>
+<input type="text" name="" id="a">
+<br><br>
+<button onclick="kiem_tra()">chuyen doi</button>
+<br><br>
+<p id="hh"></p>
+<script>
+  function kiem_tra(){
+    let a = document.getElementById('a').value;
+    let ft = ( a*3.2808 )
+    document.getElementById('hh').innerHTML = "Ft = " + ft
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = +prompt('Nhap muc luong')
+  if ( a < 6000000 && a > 4000000 ){
+    let td = (a * 5 / 100 )
+    alert(td + ' VND')
+  }
+  else if ( a > 6000000 && a <= 9000000 ) {
+    let td = Math.floor(a * 10 / 100)
+    alert(td + ' VND')
+  }
+  else if ( a > 9000000 && a <= 14000000 ) {
+    let td = Math.floor(a * 15 / 100)
+    alert(td + ' VND')
+  }
+  else if ( a > 14000000 && a <= 24000000 ) {
+    let td = Math.floor(a * 20 / 100)
+    alert(td + ' VND')
+  }
+  else if ( a > 24000000 && a <= 44000000 ) {
+    let td = Math.floor(a * 25 / 100)
+    alert(td + ' VND')
+  }
+  else if ( a > 44000000 && a < 84000000 ) {
+    let td = Math.floor(a * 30 / 100)
+    alert(td + ' VND')
+  }
+  else if ( a > 84000000 ) {
+    let td = Math.floor(a * 35 / 100)
+    alert(td + ' VND')
+  }
+
+</script>
+</body>
+</html>

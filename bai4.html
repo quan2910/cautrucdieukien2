@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> tinh dien tich hinh chu nhat</h1>
+<label for="dc"> Nhap chieu dai (cm) : </label>
+<input type="text" name="" id="dc">
+<br><br>
+<label for="dcc"> Nhap chieu rong (cm) : </label>
+<input type="text" name="" id="dcc">
+<br><br>
+
+<button onclick="kiem_tra()">Kiểm tra</button>
+<br><br>
+<p id="hh"></p>
+<script>
+  function kiem_tra(){
+    let dc = +document.getElementById('dc').value;
+    let dcc = document.getElementById('dcc').value;
+    let s = (dc * dcc)
+    document.getElementById('hh').innerHTML= "Dien tich hinh chu nhat la : " + s + "cm2"
+
+  }
+</script>
+</body>
+</html>

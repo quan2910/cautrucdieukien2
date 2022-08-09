@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> chuyen tu do C sang do F</h1>
+<label for="dc"> Nhap do C </label>
+<input type="text" name="" id="dc">
+<br><br>
+<button onclick="kiem_tra()">Kiểm tra</button>
+<br><br>
+<p id="hh"></p>
+<script>
+    function kiem_tra(){
+        let dc = +document.getElementById('dc').value;
+        let df = dc * 9/5 + 32
+        document.getElementById('hh').innerHTML= "Do F = : "+df
+
+    }
+</script>
+</body>
+</html>
